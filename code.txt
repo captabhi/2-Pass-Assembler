@@ -1,0 +1,15 @@
+START 1056
+BYTE var1 10
+RESB var2 ?
+MOV var3 , #1
+MOV R1 , #10 
+J1:
+MUL var3 , #2
+MOV R3 , #1
+ADD var3 , R3
+SUB R1 , var3
+MOV var2 , R1
+CMP var1 , var2
+JNE J1
+RESB var3 ?
+END
